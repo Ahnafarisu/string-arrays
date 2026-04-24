@@ -1,5 +1,6 @@
     import java.util.Scanner;
-    //Home Task
+//Lab-6    
+//Home Task
     //Task-1
     public class stringquizpractice{
         public static void main(String []args){
