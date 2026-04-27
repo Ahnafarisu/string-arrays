@@ -1,0 +1,44 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Arraysforquiz {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        //ways arrays can be initialized;
+        int[] arr1 = new int[4];
+        int[] arr2 = new int[] {22,33,44,55};
+        int[] arr3 = {34,32,12,45};
+        //System.out.println(Arrays.toString(arr2)); //built in method to print the elements inside an array
+        //printing the elements inside an array without using any built method
+        System.out.println("Before Updating: ");
+        for(int i = 0; i<arr2.length; i++){
+            System.out.print(arr2[i] + " "); // i is the index number here
+        }
+        System.out.println();
+        System.out.println();
+        System.out.println("After updating");
+        arr2[2] = 67;
+        for(int i = 0; i<arr2.length; i++){
+            System.out.println(arr2[i] + " "); // i is the index number here
+        }
+
+//        String[] message = {"hello" , "bye"};
+//        String[] message2 = new String[] {"hello"};
+
+        System.out.println("Insert the number of elements for the array 6: ");
+        int n = sc.nextInt();
+        int[] arr6 = new int[n];
+
+        //Taking user input inside an array
+        for(int i = 0; i<n; i++){
+            int elem = sc.nextInt();
+            arr6[i] = elem;
+        }
+
+        System.out.println(Arrays.toString(arr6)); //to make the note shorter, built in methods are using
+
+
+
+
+
+    }
+}
